@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.taskmanager.controller.MainController">
+
+    <center>
+        <ListView fx:id="taskList" id="task-list-area" />
+    </center>
+
+    <bottom>
+        <VBox spacing="10" id="controls-area">
+            <padding>
+            <Insets top="15" right="20" bottom="15" left="20"/>
+        </padding>
+
+            <HBox spacing="10">
+                <Button text="Add" onAction="#addTask" />
+                <Button text="Edit" onAction="#editTask" />
+                <Button text="Delete" onAction="#deleteTask" />
+                <Button text="Save" onAction="#saveTasks" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Button text="Exit" onAction="#handleExit" />
+            </HBox>
+
+            <HBox spacing="10"> <Label text="Sort By:"/>
+                <ComboBox fx:id="sortComboBox"/>
+
+                <Label text="Filter Status:"/>
+                <ComboBox fx:id="filterStatusComboBox"/>
+
+                <Label text="Filter Category:"/>
+                <ComboBox fx:id="filterCategoryComboBox"/>
+            </HBox>
+        </VBox>
+    </bottom>
+
+</BorderPane>

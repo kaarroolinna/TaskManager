@@ -1,0 +1,49 @@
+.root {
+    -fx-font-family: 'Start Story';
+    -fx-background-color: #FFDAB9;
+}
+#controls-area {
+    -fx-background-color: #f2c9da;
+    -fx-text-fill: #000000;
+}
+
+#task-list-area {
+    -fx-background-color: #FFEFD5;
+    -fx-border-color: #FFDAB9;
+}
+
+.label {
+    -fx-font-family: 'Start Story';
+    -fx-text-fill: #000000;
+}
+
+.button {
+    -fx-font-family: 'Start Story';
+    -fx-font-size: 14pt;
+    -fx-background-color: #FFB6C1;
+    -fx-text-fill: black;
+    -fx-background-radius: 100;
+}
+
+.list-view .list-cell {
+    -fx-background-color: #FFE4C4;
+    -fx-text-fill: black;
+    -fx-padding: 0;
+    -fx-border-color: #DEB887;
+    -fx-border-width: 0 0 1 0;
+}
+
+#controls-area .combo-box {
+    -fx-background-color: #FFF8DC;
+    -fx-border-color: #EE82EE;
+}
+
+#controls-area .combo-box .list-cell {
+    -fx-background-color: #FFF8DC;
+    -fx-text-fill: black;
+}
+
+@font-face {
+    font-family: 'Start Story';
+    src: url('/fonts/StartStory.ttf');
+}
